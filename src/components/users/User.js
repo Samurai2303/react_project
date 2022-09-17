@@ -7,7 +7,7 @@ export function User(props) {
                 Name - {user.name}</h2>
             <button onClick={() => {
                 userDetailsFn(user)
-            }}>Show details
+            }}>Show/Hide details
             </button>
         </div>
     );

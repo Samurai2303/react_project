@@ -1,19 +1,13 @@
 import './App.css';
-import {Posts} from "./components/posts/Posts";
-import {Users} from "./components/Users";
+import {Users} from "./components";
 
 function App() {
 
-    let lift = (user) => {
-        Posts(user);
-    }
-
     return (
         <div>
-            <hr/>
+            {}
 
-            <Users lift={lift}/>
-
+            <Users/>
 
         </div>
     );

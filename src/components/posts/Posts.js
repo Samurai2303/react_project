@@ -1,13 +1,9 @@
-import {useEffect} from "@types/react";
-import {getPostsOfUser} from "../../services";
-import {useState} from "react";
+import {Post} from "../post/Post";
 
-export async function Posts(id) {
-    let [posts, setPosts] = useState([]);
-
-    await useEffect(() => {
-        getPostsOfUser(id).then(({data}) => setPosts(data));
-    }, []);
-
-    return posts;
+export function Posts({posts}) {
+    return(
+        <div>
+            {posts.map(value => <Post post={value} key={value.id}/>)}
+        </div>
+    )
 }

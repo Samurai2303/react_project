@@ -4,12 +4,8 @@ let axiosInstance = axios.create({
     baseURL: 'https://jsonplaceholder.typicode.com/users'
 });
 
-function getAllUsers(){
+function getUsers() {
     return axiosInstance();
 }
 
-function getUserById(id) {
-    return axiosInstance(`/${id}`);
-}
-
-export {getAllUsers, getUserById};
+export {getUsers};

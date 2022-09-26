@@ -7,7 +7,7 @@ export function Comment({comment}) {
             <p>Name - {comment.name} <br/>
             Email - {comment.email} <br/>
             Body - {comment.body}</p>
-            <Link to={'/comments/'+comment.postId}>Show post</Link>
+            <Link to={'/posts/'+comment.postId}>Show post</Link>
             <hr/>
         </div>
     )

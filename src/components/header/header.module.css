@@ -1,0 +1,20 @@
+.header {
+    height: 40px;
+    background: #61dafb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header a{
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header a[class='active'] {
+    border: 2px solid darkred;
+    color: darkred;
+    font-weight: 700;
+}
